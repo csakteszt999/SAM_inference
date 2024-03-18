@@ -1,0 +1,3 @@
+model_name: "MobileSAM"
+model: apps.MobileSAM.mobile_sam.build_sam_vit_t  # Not a class
+predictor: apps.MobileSAM.mobile_sam.SamPredictor

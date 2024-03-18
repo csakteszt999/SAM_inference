@@ -1,0 +1,8 @@
+### Goal: Create an organized hydra environment for testing different SAM architectures.
+
+### Általános dolgok: checkpoint path, gpu/cpu, treshold, legyen-e vizualizáció, legye-e mentés, a modell melyik változata,
+legyen-e onnx export, maga az input pont vagy bounding box stb., de lehet, hogy egyes algoritmusoknál lesznek egyedi dolgok, ami másoknál nem.
+
+## Install:
+pip install torch==2.1.2+cu121
+pip install hydra==1.3.2

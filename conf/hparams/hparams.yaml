@@ -1,0 +1,4 @@
+img_size: 1024
+conf: 0.4
+iou: 0.9
+retina_masks: True

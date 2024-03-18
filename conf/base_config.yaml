@@ -1,0 +1,25 @@
+defaults:
+    - _self_
+    - sam_app: MobileSAMv2_batch
+    - hparams: hparams
+
+general:
+    model_init_params: False
+    save_model: False
+    use_wandb: False
+
+paths:
+    fast_sam_path: ${hydra:runtime.cwd}/ckpts/FastSAM-s.pt
+    mobile_sam_path: ${hydra:runtime.cwd}/ckpts/mobile_sam.pt
+    eff_sam_path: ${hydra:runtime.cwd}/ckpts/efficient_sam_vitt.pt
+    img_path: ${hydra:runtime.cwd}/imgs/wp_detection/test
+    out_path: ${hydra:runtime.cwd}/preds/wp_preds/
+    mobsam_dir: ${hydra:runtime.cwd}/apps/MobileSAM
+    annot_path: ${hydra:runtime.cwd}/imgs/wp_detection/test/_annotations.coco.json
+
+hydra:
+    run:
+        dir: outputs/${now:%Y-%m-%d_%H-%M-%S}
+    sweep:
+        dir: outputs/${now:%Y-%m-%d_%H-%M-%S}
+        subdir: ${hydra.job.override_dirname}
