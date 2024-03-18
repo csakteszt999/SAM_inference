@@ -1,9 +1,0 @@
-[submodule "apps/EfficientSAM"]
-	path = apps/EfficientSAM
-	url = git@github.com:yformer/EfficientSAM.git
-[submodule "apps/FastSAM"]
-	path = apps/FastSAM
-	url = git@github.com:CASIA-IVA-Lab/FastSAM.git
-[submodule "apps/MobileSAM"]
-	path = apps/MobileSAM
-	url = git@github.com:ChaoningZhang/MobileSAM.git
